@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{../static/third-party/bootstrap-4.3.1-dist/css/bootstrap.min.css}" >
+    <title>Excel Data To Word App</title>
+</head>
+<body>
+   <div align="center">
+       <h1>Excel Data To World App</h1>
+   </div>
+
+   <div class="jumbotron text-center">
+       <div align="left">
+           <form action="/api/v1/upload.do" enctype="multipart/form-data" method="post">
+               <input th:type="file" name="uploadFileName" >
+               <input type="submit" value="提交">
+           </form>
+       </div>
+   </div>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script th:src="@{../static/third-party/jquery/jquery-3.3.1.slim.min.js}"></script>
+   <script th:src="@{../static/third-party/ajax/libs/popper.js/1.14.7/umd/popper.min.js}"/>
+   <script th:src="@{../static/third-party/bootstrap-4.3.1-dist/js/bootstrap.min.js}"/>
+</body>
+</html>
