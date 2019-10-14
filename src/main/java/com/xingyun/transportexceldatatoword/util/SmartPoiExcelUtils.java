@@ -38,9 +38,11 @@ public final class SmartPoiExcelUtils {
                     }
                 }
             }
+            workbook.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return dataList;
     }
 

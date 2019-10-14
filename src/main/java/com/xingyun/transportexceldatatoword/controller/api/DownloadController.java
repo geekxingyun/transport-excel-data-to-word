@@ -1,17 +1,13 @@
 package com.xingyun.transportexceldatatoword.controller.api;
 
 import com.xingyun.transportexceldatatoword.constant.CommonConstant;
-import com.xingyun.transportexceldatatoword.model.AppResponse;
 import com.xingyun.transportexceldatatoword.util.DownloadFileUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 
 /**
  * @author 星云
