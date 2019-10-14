@@ -30,6 +30,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
         <!-- 项目所使用第三方依赖jar包的版本,建议以后都使用这种方式,方便今后维护和升级 -->
+        <apache.poi.version>4.1.0</apache.poi.version>
     </properties>
 
     <dependencies>
@@ -57,19 +58,19 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>4.1.0</version>
+            <version>${apache.poi.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.1.0</version>
+            <version>${apache.poi.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-schemas</artifactId>
-            <version>4.1.0</version>
+            <version>${apache.poi.version}</version>
         </dependency>
 
         <!-- thymeleaf 页面模板引擎-->
